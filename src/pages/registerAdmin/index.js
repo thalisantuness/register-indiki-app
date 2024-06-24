@@ -8,7 +8,7 @@ export default function Questions() {
   const [senha, setSenha] = useState("");
   const [cpf, setCpf] = useState("");
   const [codigoEmpresa, setCodigoEmpresa] = useState("");
-  const navigate = useNavigate();  // Hook do React Router para navegação
+  const navigate = useNavigate();  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
