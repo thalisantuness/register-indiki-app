@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Alata', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.input-box {
+  color:#A7A6A5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #1C1F1E;
+  border-radius: 8px;
+  width: 100%;
+  color: #A7A6A5; 
+  margin: 4px 0 4px 0;
+}
+
+.form button {
+  margin-top: 5px;
+  background-color: #EC4760; 
+  border-radius: 14px;
+  width: 170px;
+  height: 50px;
+  border: none;
+}
+
+.button {
+  color: #F4F6F5;
+  font-weight: 400;
+  font-family: 'Alata', sans-serif;
+}
+
+.register-link p {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #EC4760;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+
+  .section {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Alata', sans-serif;
+  } 
+
+  .title {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+
+  
+}
