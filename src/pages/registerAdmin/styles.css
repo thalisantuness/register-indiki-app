@@ -21,7 +21,16 @@
   font-family: 'Alata', sans-serif;
   font-weight: 400;
   font-size: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 22px;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px; /* Diminuir o tamanho da logo por padrão */
+  height: auto;
+
 }
 
 .input-box {
@@ -33,11 +42,14 @@
 
 input {
   padding: 8px;
-  border: 1px solid #1C1F1E;
+  border: 1px solid #ccc;
   border-radius: 8px;
   width: 100%;
   color: #A7A6A5; 
   margin: 4px 0 4px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .form button {
@@ -80,6 +92,8 @@ input {
     font-size: 20px;
     margin-bottom: 50px;
   }
+
+
 
 
   

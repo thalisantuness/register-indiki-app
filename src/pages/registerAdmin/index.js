@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles.css";
+import logo from "./Indikilogo.png"; // Certifique-se de que o caminho está correto
 
 export default function Questions() {
   const [nome, setNome] = useState("");
@@ -8,7 +9,7 @@ export default function Questions() {
   const [senha, setSenha] = useState("");
   const [cpf, setCpf] = useState("");
   const [codigoEmpresa, setCodigoEmpresa] = useState("");
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,7 +30,7 @@ export default function Questions() {
 
     if (response.ok) {
       alert("Cadastro realizado com sucesso!");
-      navigate("/validation");  // Navegação para a rota de validação
+      navigate("/validation"); // Navegação para a rota de validação
     } else {
       alert("Erro ao realizar o cadastro. Tente novamente.");
     }
@@ -37,7 +38,9 @@ export default function Questions() {
 
   return (
     <div className="section">
+      <img src={logo} alt="Logo" className="logo" /> 
       <form onSubmit={handleSubmit} className="form">
+        
         <h1 className="title">Cadastre-se</h1>
 
         <div className="input-box">
