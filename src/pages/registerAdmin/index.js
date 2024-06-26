@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles.css";
-import logo from "./Indikilogo.png"; // Certifique-se de que o caminho está correto
+import logo from "../../assets/Indikilogo.png"; // Certifique-se de que o caminho está correto
 
 export default function Questions() {
   const [nome, setNome] = useState("");
