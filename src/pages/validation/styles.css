@@ -1,0 +1,103 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+  }
+  
+  /* Body */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0;
+  }
+  
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Imagem Young */
+  .young-img {
+    width: 35%;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  
+  /* Text Wrapper */
+  .text-wrapper {
+    margin-top: 20px;
+  }
+  
+  /* Text Content */
+  .text-content {
+    text-align: right;
+    margin-top: 20px;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+  }
+  
+  .text-content p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Imagem App Store */
+  .appstore-img {
+    width: 180px;
+    cursor: pointer; /* Add pointer cursor for better UX */
+  }
+  
+  /* Logo */
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .young-img {
+      width: 70%;
+    }
+  
+    .text-content {
+      text-align: center;
+      font-weight: 400;
+      font-size: 24px;
+      color: #1C1F1E;
+    }
+  
+    .appstore-img {
+      width: 200px;
+      height: auto;
+    }
+  
+    .logo {
+      position: fixed; /* Fixed positioning to keep it at top left of the viewport */
+      top: 0px;
+      left: -05px;
+      width: 100px;
+      height: auto;
+      z-index: 999; /* Ensure it's above other content */
+    }
+  }
+  
